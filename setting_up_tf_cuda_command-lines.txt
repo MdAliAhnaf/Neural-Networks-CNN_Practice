@@ -1,1 +1,18 @@
 conda install -y jupyter
+conda env list
+conda create --name tensorflow-py3.7 python=3.7
+conda activate tensorflow-py3.7
+conda install ipykernel
+python -m ipykernel install --user --name tensorflow-py3.7 --display-name "Python 3.7 (tensorflow)"
+
+pip install --upgrade pip OR python.exe -m pip install --upgrade pip
+
+pip install tensorflow OR pip install tensorflow==2.5
+
+import tensorflow as tf
+print(tf.__version__)
+print("GPU is ", "available" if tf.config.list_physical_devices('GPU') else "not available")
+print(f"CUDA: {tf.test.is_built_with_cuda()}")
+
+conda env list
+conda remove --name tensorflow-py3.9 --all
