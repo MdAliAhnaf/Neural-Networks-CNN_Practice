@@ -15,4 +15,4 @@ print("GPU is ", "available" if tf.config.list_physical_devices('GPU') else "not
 print(f"CUDA: {tf.test.is_built_with_cuda()}")
 
 conda env list
-conda remove --name tensorflow-py3.9 --all
+conda remove --name tensorflow-py3.7 --all
