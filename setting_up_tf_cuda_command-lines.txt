@@ -16,3 +16,12 @@ print(f"CUDA: {tf.test.is_built_with_cuda()}")
 
 conda env list
 conda remove --name tensorflow-py3.7 --all
+
+#remove ipykernel
+jupyter kernelspec list
+jupyter kernelspec uninstall unwanted-kernel-name
+
+pip install opencv-python
+pip install fastapi
+pip install uvicorn
+uvicorn main:app --reload
