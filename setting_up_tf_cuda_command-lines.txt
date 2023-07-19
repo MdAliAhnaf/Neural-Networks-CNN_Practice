@@ -20,8 +20,6 @@ conda remove --name tensorflow-py3.7 --all
 #remove ipykernel
 jupyter kernelspec list
 jupyter kernelspec uninstall unwanted-kernel-name
+cmd -> nvcc --version (cuda version)
 
 pip install opencv-python
-pip install fastapi
-pip install uvicorn
-uvicorn main:app --reload
