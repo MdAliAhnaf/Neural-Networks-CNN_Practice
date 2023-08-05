@@ -1,5 +1,6 @@
 PyTorch Build -> Stable (2.0.1) (cuda toolkit 11.8)
 pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118 
+conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
 
 cmd -> nvcc --version (cuda version)
 
