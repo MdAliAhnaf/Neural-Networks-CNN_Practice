@@ -1,13 +1,13 @@
 conda install -y jupyter
 conda env list
-conda create --name tensorflow-py3.7 python=3.7
-conda activate tensorflow-py3.7
+conda create --name tensorflow-py3.10 python=3.10
+conda activate tensorflow-py3.10
 conda install ipykernel
-python -m ipykernel install --user --name tensorflow-py3.7 --display-name "Python 3.7 (tensorflow)"
+python -m ipykernel install --user --name tensorflow-py3.10 --display-name "Python 3.10 (tensorflow)"
 
 pip install --upgrade pip OR python.exe -m pip install --upgrade pip
 
-pip install tensorflow OR pip install tensorflow==2.5
+pip install tensorflow OR pip install tensorflow==2.10
 
 import tensorflow as tf
 print(tf.__version__)
@@ -15,7 +15,7 @@ print("GPU is ", "available" if tf.config.list_physical_devices('GPU') else "not
 print(f"CUDA: {tf.test.is_built_with_cuda()}")
 
 conda env list
-conda remove --name tensorflow-py3.7 --all
+conda remove --name tensorflow-py3.10 --all
 
 #remove ipykernel
 jupyter kernelspec list
@@ -23,3 +23,9 @@ jupyter kernelspec uninstall unwanted-kernel-name
 cmd -> nvcc --version (cuda version)
 
 pip install opencv-python
+conda install -c conda-forge xgboost
+pip install pandas
+pip install seaborn
+pip install lightgbm
+pip install catboost
+pip install xgboost
