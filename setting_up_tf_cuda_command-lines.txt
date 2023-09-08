@@ -22,10 +22,13 @@ jupyter kernelspec list
 jupyter kernelspec uninstall unwanted-kernel-name
 cmd -> nvcc --version (cuda version)
 
+
+pip install notebook
 pip install opencv-python
 conda install -c conda-forge xgboost
 pip install pandas
+pip install numpy
 pip install seaborn
 pip install lightgbm
 pip install catboost
-pip install xgboost
+pip install scikit-optimize (skopt)
